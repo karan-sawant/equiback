@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'HobjShtfaLthqyFF35w1UwKhfz6IceeY6XpmF6a0fovNYmPBXE+QpWiFiGNOVwfoaWWmsknSGlPHywctskkKXQ=='
 
 
-socketio = SocketIO(app, cors_allowed_origins=["www.equishell.com"])
+socketio = SocketIO(app, cors_allowed_origins=["https://www.equishell.com"])
 
 @socketio.on('message')
 def handle_message(data):
